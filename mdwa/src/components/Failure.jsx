@@ -27,9 +27,9 @@ const Failure = (props) => {
     >
     { lost && (
       <div className='failure' key="failScreen">
-        <div className='navButton'>
-          <a className="backButton" onClick={goBack}>Home</a>
-          <a className="helpButton white" onClick={toggleHelp}>Help</a>
+        <div className='navButton-container'>
+          <a className="navButton backButton white" onClick={goBack}>Home</a>
+          <a className="navButton helpButton white" onClick={toggleHelp}>Help</a>
         </div>
         <div className="inner">
           <h3>You failed.</h3>

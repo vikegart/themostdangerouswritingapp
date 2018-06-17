@@ -95,8 +95,23 @@
         }
     }
 
-.buttons-nav{
-    display: block;
-    margin-bottom: 10px;
+.helpButton{
+    top: 60px;
+}
+
+.navButton.backButton{
+    &:before
+    {
+        content: '\3c';
+        padding: 1px 2px 0 0;
+        width: 18px;
+        height: 19px;
+        
+    }
+    .white{
+        color: #FFFEFA;
+        border: 2px solid #FFFEFA;
+        
+    }
 }
 
