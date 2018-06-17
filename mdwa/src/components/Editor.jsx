@@ -80,7 +80,6 @@ export default class Editor extends Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <AppContext.Consumer>{ ({danger, hardcore, won}) =>
         <div

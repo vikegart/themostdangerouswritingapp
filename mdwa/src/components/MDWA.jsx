@@ -19,7 +19,6 @@ export default class MDWA extends Component {
   toggleHome() { this.setState({screen: 'home' })}
   toggleWrite(type, limit, hardcore) {
     console.log("Ready to write ", type, limit, hardcore);
-    console.log(this.state);
     this.setState({type, limit, hardcore, screen: 'write'});
   }
 

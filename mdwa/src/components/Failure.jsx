@@ -18,7 +18,6 @@ const Failure = (props) => {
   const type = props.type;
   const lost = props.lost;
   const words = props.words;
-  console.log(props);
   return (
     <CSSTransitionGroup
       transitionName="failure"

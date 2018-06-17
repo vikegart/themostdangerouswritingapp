@@ -21,7 +21,6 @@ export default class WritingApp extends React.Component {
     this.toggleNightMode = this.toggleNightMode.bind(this);
     this.now = this.now.bind(this);
     this.editor = React.createRef();
-    console.log(this.props);
 
     this.state = {
       run: false,
