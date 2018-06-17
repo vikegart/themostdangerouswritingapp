@@ -18,7 +18,8 @@ export default class MDWA extends Component {
   toggleHelp() { this.setState({screen: 'help' })}
   toggleHome() { this.setState({screen: 'home' })}
   toggleWrite(type, limit, hardcore) {
-    console.log("Ready to write", type, limit, hardcore)
+    console.log("Ready to write ", type, limit, hardcore);
+    console.log(this.state);
     this.setState({type, limit, hardcore, screen: 'write'});
   }
 
@@ -27,7 +28,7 @@ export default class MDWA extends Component {
     return (
       <div>
         { screen === "home" && <Welcome onHelp={this.toggleHelp} onWrite={this.toggleWrite} /> }
-        { screen === "write" && <WritingApp onHelp={this.toggleHelp} {...this.state} /> }
+        { screen === "write" && <WritingApp onHome={this.toggleHome} onHelp={this.toggleHelp} {...this.state} /> }
         { screen === "help" && <Help onWrite={this.toggleWrite} onBack={this.toggleHome} /> }
       </div>
     )

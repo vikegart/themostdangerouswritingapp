@@ -10,7 +10,15 @@ const TweetButton = ({words}) => {
   return <a className="tweet" href={href}>{label}</a>;
 }
 
-const Failure = ({onReset, toggleHelp, limit, type, lost, words }) => {
+const Failure = (props) => {
+  const onReset = props.onReset;
+  const toggleHelp = props.toggleHelp;
+  const goBack = props.toggleHome;
+  const limit = props.limit;
+  const type = props.type;
+  const lost = props.lost;
+  const words = props.words;
+  console.log(props);
   return (
     <CSSTransitionGroup
       transitionName="failure"
@@ -19,7 +27,10 @@ const Failure = ({onReset, toggleHelp, limit, type, lost, words }) => {
     >
     { lost && (
       <div className='failure' key="failScreen">
-        <a className="navButton helpButton white" onClick={toggleHelp}>Help</a>
+        <div className='navButton'>
+          <a className="backButton" onClick={goBack}>Home</a>
+          <a className="helpButton white" onClick={toggleHelp}>Help</a>
+        </div>
         <div className="inner">
           <h3>You failed.</h3>
           <TweetButton words={words} />
