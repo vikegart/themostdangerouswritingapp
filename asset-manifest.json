@@ -1,5 +1,10 @@
 {
-  "main.js": "static/js/main.f2a75bd4.js",
-  "main.js.map": "static/js/main.f2a75bd4.js.map",
-  "static\\media\\main.scss": "static/media/main.1ae3ea55.scss"
+  "main.js": "static/js/main.ad147c45.js",
+  "main.js.map": "static/js/main.ad147c45.js.map",
+  "static\\media\\accolades.png": "static/media/accolades.16e4f60b.png",
+  "static\\media\\mdwa.eot?62057485": "static/media/mdwa.34af6454.eot",
+  "static\\media\\mdwa.svg?62057485": "static/media/mdwa.6f1ed0c3.svg",
+  "static\\media\\mdwa.ttf?62057485": "static/media/mdwa.e76431cd.ttf",
+  "static\\media\\mdwa.woff2?62057485": "static/media/mdwa.ba50e0c5.woff2",
+  "static\\media\\mdwa.woff?62057485": "static/media/mdwa.faab8634.woff"
 }
